@@ -1,0 +1,33 @@
+import datetime as d
+mybirth=d.datetime(2000,2,23)
+after=d.timedelta(days=10000)
+print(mybirth+after)
+import time
+unix_timestamp=time.time()
+locat_time=time.localtime(unix_timestamp)
+print(time.strftime('%Y-%m-%d %H:%M:%S',locat_time))
+start_time=time.time()
+print(1+2+3+4)
+end_time=time.time()
+gap=end_time-start_time
+print('a{:7.4f}'.format(gap))
+import random as rd
+print(rd.randrange(1,10))
+
+
+while(1):
+    a=rd.randrange(1,6)
+    b=rd.randrange(1,6)
+    print(a,b)
+    if a>b:
+        print('a가이김')
+        break
+    elif a<b:
+        print('b가 이김')
+        break
+    else :
+        print('비김')
+numlit=[10,20,30,40,50]
+rd.shuffle(numlit)
+print(numlit)
+print(rd.choice(numlit))

@@ -1,0 +1,14 @@
+import random as rd
+list=[]
+for i in range(45):
+    list.append(i)
+rd.shuffle(list)
+newlist=list[0:6]
+newlist.sort()
+print(newlist)
+
+list=[1,2,3,7,8,9]
+for i in range(len(list)):
+    if i+1 !=list[i]:
+        list.insert(i,i)
+print(list)
